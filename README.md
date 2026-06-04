@@ -27,3 +27,14 @@ All automated tests passed successfully.
 - Node.js (Automation Scripts)
 - GitHub Actions (CI/CD)
 
+## API Testing Playground
+A demo project showcasing automated API testing with Postman, Node.js, and Python.
+
+- Validates responses from public APIs (e.g., GitHub API)
+- Includes automated assertions for status codes and response fields
+- Demonstrates multiple approaches:
+  - Code-based testing (`apiTest.js`, `apiTest.py`)
+  - Tool-based testing (Postman collection)
+- Provides reproducible test results with screenshots and exported collections
+
+
