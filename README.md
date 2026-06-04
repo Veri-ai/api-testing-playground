@@ -20,3 +20,10 @@ node apiTest.js
 All automated tests passed successfully.
 
 ![API Test Results](docs/api-test-results.png)
+
+**Technologies Used:**
+- HTML5, CSS3 (Grid/Flexbox), JavaScript (ES6+)
+- Postman (API Testing)
+- Node.js (Automation Scripts)
+- GitHub Actions (CI/CD)
+
