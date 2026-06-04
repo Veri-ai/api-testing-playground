@@ -1,0 +1,60 @@
+{
+  "info": {
+    "_postman_id": "5eb5196d-6d8f-4218-9279-7e2c0a85fc2d",
+    "name": "API Testing Playground",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55477076",
+    "_collection_link": "https://go.postman.co/collection/55477076-5eb5196d-6d8f-4218-9279-7e2c0a85fc2d?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Repo name is Explore-Shape\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "    pm.expect(jsonData.name).to.eql(\"Explore-Shape\");\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Owner is Veri-ai\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "    pm.expect(jsonData.owner.login).to.eql(\"Veri-ai\");\r",
+              "});\r",
+              "\r",
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.github.com/repos/veri-ai/Explore-Shape",
+          "protocol": "https",
+          "host": [
+            "api",
+            "github",
+            "com"
+          ],
+          "path": [
+            "repos",
+            "veri-ai",
+            "Explore-Shape"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
